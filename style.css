@@ -1,0 +1,114 @@
+#cotainer-fluid{
+ background-image: linear-gradient( rgba(55, 0, 0, 0.6),rgba(0, 0, 0, 0.8) ),url("./assets/bg.jpg");
+ min-height: 450px;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#icons ,i{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+i:hover{
+    cursor: pointer;
+    color: blue;
+    transition: all 2s linear;
+    transform: scale(1.1);
+
+}
+
+#aboutImg{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card{
+   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card:hover{
+    background-color: lightgreen;
+}
+#cards{
+    min-height: 70px;
+    width: 70px;
+    /* border-radius: 26% 74% 20% 80% / 62% 30% 70% 38% ; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    padding-right: 10px;    
+}
+#design{
+        
+    width: 30px;   
+}
+.pricingCard{
+    max-width: 350px;
+    border-radius: 10px;
+  
+}
+.pricingCard:hover{
+    transition: 1s;
+    border-top: 10px solid red;
+}
+.generic_feature_list ul{
+    list-style: none;
+}
+.generic_feature_list ul li{
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 1s all linear;
+}
+.generic_feature_list  li:hover{
+    background-color: lightgray;
+    border-left: 5px solid yellow;
+    border-top: 5px solid yellow;;
+    padding: 10px;
+    color: blue;
+    font-weight: bolder;
+}
+.pricingCard button{
+    width: 100%;
+}
+#galleryButtons button{
+    width: 30%;
+    margin-top: 10px;
+}
+#gallery img{
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#gallery img:hover{
+    filter: grayscale(50%);
+}
+/*  -----------------------------------GALLERY IMGAGE */
+@media(max-width:309px){
+    #galleryButtons button{
+        width: 100%;
+    }
+    #gallery img{
+        width: 100%;
+
+    }   
+}
+@media(max-width:409px){
+    #gallery img{
+        width: 100%;
+
+    } 
+    #galleryButtons button{
+        width: 100%;
+    }
+}
+@media(max-width:996px){
+    #gallery img{
+        width: 32%;
+        
+
+    } 
+}
